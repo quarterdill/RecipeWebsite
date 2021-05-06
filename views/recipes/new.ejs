@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang = "en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset = "UTF-8">
+    <title>Dylan's <%-recipeinfo.recipe%></title>
+    <link rel="stylesheet" href="rec-style.css" type="text/css">
+</head>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#aboutmebot">About</a></li>
+            <li><a href="#contactbot">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div> 
+        <img src=<%- imgname %> class = "img-fluid mx-auto banner" alt ="<%- recipeinfo.recipe %> picture" >
+    </div>
+    <section class = "home-rec">
+        <h1> Dylan's <%- recipeinfo.recipe %> Recipe </h1>
+        <div class = "row container-fluid">
+            <div class = "col-2 text-left">
+                <h5><b>Ingredients</b></h5> <br> <%- recipeinfo.ingredients %>
+            </div>
+            <div class = "col-10 text-left">
+                <h5><b>Instructions</b></h5> <br> <%- recipeinfo.instructions %>
+            </div>
+        </div> 
+    </section>
+</body>
+
+<footer>
+    <div class = "mycontainer">
+       <div class = "mycol-3">
+           <h2 name = "aboutmebot" id = "aboutmebot" style="color: #7EF36F;">About Me</h2>
+           <p>Dylan is a computer science sophomore at the University of Waterloo. He made this project to display his favourite recipes, learn more 
+               about web development and practice his coding skills. He used Node.js, Express.js, and MongoDB to build this website with his original recipes
+               and images. <br>
+           </p>
+           <h2 name = "contactbot" id = "contactbot" style="color: #7EF36F;"><strong>Contact Me</strong></h1>
+           <p>
+               You can email me at d29xiao@uwaterloo.ca or message me on <a href = "https://www.linkedin.com/in/dylanx" 
+               target="_blank" rel="noopener noreferrer" style="color: #FFF;">LinkedIn</a>. Also, feel free to check out 
+               my other projects on <a href = "https://www.github.com/quarterdill" 
+               target="_blank" rel="noopener noreferrer" style="color: #FFF;">GitHub</a>.
+           </p>
+       </div>
+   
+       <div class="mycol-1"> 
+           <ul class="myunstyled-list">
+               <li><h2 style="color: #7EF36F;">Locations</h2></li>
+               <li>Toronto</li>
+               <br>
+               <li>Waterloo</li>
+               <br>
+               <li>Cali (Coming soon)</li>
+           </ul>
+       </div>
+   </div>
+   </footer>
+    
+</html>
