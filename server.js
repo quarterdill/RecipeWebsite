@@ -101,7 +101,7 @@ const recipeNames = ["Pizza", "Brownies"];
 let recipeArray = new Array(recipeNames.length);
 
 async function findRecipe(nameOfRecipe) {
-    const uri = "mongodb+srv://TheDillCooksFood2021:D0W4n8hYP6Gl17yR@recipedb.wcoeh.mongodb.net/RecipeDB?retryWrites=true&w=majority";
+    const uri = process.env.MONGO_URI;
     
     const client = new MongoClient(uri, { useUnifiedTopology: true });
 
