@@ -71,7 +71,7 @@ async function listDatabases(client){
 
 
 async function findOneListingByName(nameOfListing) {
-    const uri = "mongodb+srv://TheDillCooksFood2021:D0W4n8hYP6Gl17yR@recipedb.wcoeh.mongodb.net/RecipeDB?retryWrites=true&w=majority";
+    const uri = process.env.MONGO_URI;
     
     const client = new MongoClient(uri, { useUnifiedTopology: true });
 
@@ -194,4 +194,8 @@ app.get('/', async (req, res) => {
 
 app.use('/recipes', recipeRouter)
 
-app.listen(5000)
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 5000;
+}
+app.listen(port);
