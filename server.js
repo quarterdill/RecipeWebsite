@@ -14,7 +14,6 @@ const id = ObjectId("5ff0e136d7557de1509e2d36");
     useNewUrlParser: true, useUnifiedTopology: true//, useCreateIndex: true
 })*/
 
-// const uri = "mongodb+srv://TheDillCooksFood2021:${password}@recipedb.wcoeh.mongodb.net/<RecipeDB>?retryWrites=true&w=majority";
 const query = {"recipe": "pizza"};
 //const client = new MongoClient(uri, {useNewUrlParser: true}, {useUnifiedTopology: true}, {connectTimeoutMS: 30000}, {keepAlive: 1});
 
@@ -49,8 +48,7 @@ async function listDatabases(client){
      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
      */
-    const uri = "mongodb+srv://TheDillCooksFood2021:D0W4n8hYP6Gl17yR@recipedb.wcoeh.mongodb.net/RecipeDB?retryWrites=true&w=majority";
-    // const uri = "mongodb+srv://TheDillCooksFood2021:${password}@recipedb.wcoeh.mongodb.net/RecipeDB?retryWrites=true&w=majority";
+    const uri = process.env.MONGO_URI;
     const client = new MongoClient(uri, { useUnifiedTopology: true });
      
     try {
