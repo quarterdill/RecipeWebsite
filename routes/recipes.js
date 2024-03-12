@@ -74,7 +74,7 @@ let recipeMap = {
   eggtarts: {
     recipe: "Hong Kong Egg Tarts",
     ingredients: `<strong>Wrapper</strong> <br>
-    2 cups of all-purpose flour <br> 200g room temperature cubed butter <br> 3 tbsp cold water <br> 1/4 tsp salt
+    2 cups of all-purpose flour <br> 200g room temperature cubed butter <br> 3 tbsp cold water <br> 1/4 tsp salt <br>
     <strong>Custard</strong> <br>
     1/2 cup sugar <br> 1 cup hot water <br> 1/2 cup evaporated milk <br> 4 large eggs <br> 1 tsp vanilla extract`,
     instructions: `<strong>Servings:</strong> 18 tarts <br>
@@ -92,10 +92,10 @@ let recipeMap = {
   shrimpwraps: {
     recipe: "Shrimp Wraps",
     ingredients: `<strong>Wrap</strong> <br>
-    4 cups of all-purpose flour <br> 1/2 cup hot water <br> 12 tbsp greek yogurt <br> 1/2 tbsp salt
+    4 cups of all-purpose flour <br> 1/2 cup hot water <br> 12 tbsp greek yogurt <br> 1/2 tbsp salt <br>
     <strong>Shrimp</strong> <br>
-    900g peeled shrimp<br> cooking oil of your choice <br> 1/2 tbsp spicy chili powder (cayenne is fine) <br> 5 cloves minced garlic <br> 1 tbsp minced ginger <br> 1 tsp salt <br> 1 tsp pepper <br> 1/2 cup apple cider vinegar <br> 3 tbsp cup soy sauce <br> 3 tbsp maple syrup <br> 1 tsp sesame oil
-    <strong>Optional</strong <br>
+    900g peeled shrimp<br> cooking oil of your choice <br> 1/2 tbsp spicy chili powder (cayenne is fine) <br> 5 cloves minced garlic <br> 1 tbsp minced ginger <br> 1 tsp salt <br> 1 tsp pepper <br> 1/2 cup apple cider vinegar <br> 3 tbsp cup soy sauce <br> 3 tbsp maple syrup <br> 1 tsp sesame oil <br>
+    <strong>Optional</strong <br> <br>
     Avocado, Cabbage, rice`,
     instructions: `<strong>Servings:</strong> 18 wraps <br>
     <strong>Cooking Time:</strong> 2 hours prep, 1 hour cook <br>
